@@ -21,7 +21,7 @@ A continuación, he comprobado la versión del servidor:
 ###### Figura 1.1. Versión del servidor.
 
 Y posteriormente si está en ejecución en ambas máquinas:
-![ejecucion_apache_m1](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%201/apache_ejecicion_m1.png)
+![ejecucion_apache_m1](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%201/apache_ejecucion_m1.png)
 ###### Figura 1.2. Funcionamiento de apache en MV1.
 
 ![ejecucion_apache_m2](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%201/apache_ejecucion_m2.png)
