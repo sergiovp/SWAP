@@ -23,5 +23,4 @@ Y posteriormente si está en ejecución en ambas máquinas:
 
 
 Para instalar curl he ejecutado
-|*sudo apt-get install curl*|
-|:-------------------------:|
+'sudo apt-get install curl'
