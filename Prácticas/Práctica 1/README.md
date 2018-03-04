@@ -16,6 +16,7 @@ Tras la instalación de **Ubuntu Server** en ambas máquinas y siguiendo el gui�
 |ubuntu2 |192.168.1.111|172.20.10.5       |
 
 A continuación, he comprobado la versión del servidor:
+
 ![version_servidor](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%201/version_servidor.png)
 ###### Figura 1.1. Versión del servidor.
 
