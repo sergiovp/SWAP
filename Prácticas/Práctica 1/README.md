@@ -17,8 +17,7 @@ Tras la instalación de **Ubuntu Server** en ambas máquinas y siguiendo el gui�
 
 A continuación, he comprobado la versión del servidor:
 
-![version_servidor](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%201/version_servidor.png)
-###### Figura 1.1. Versión del servidor.
+![version_servidor](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%201/version_servidor.png) ###### Figura 1.1. Versión del servidor.
 
 Y posteriormente si está en ejecución en ambas máquinas:
 ![ejecucion_apache_m1](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%201/apache_ejecicion_m1.png)
