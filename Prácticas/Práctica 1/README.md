@@ -1,6 +1,6 @@
 # Práctica 1. Preparación de las herramientas.
 ## Sergio Vela Pelegrina.
-Esta primera práctica, consiste en la instalación de dos máquinas virtuales con **Ubuntu Server**, para poder usarlas como máquinas servidores.
+Esta primera práctica, consiste en la instalación de dos máquinas virtuales con **Ubuntu Server**, asegurando la conectividad entre ellas.
 En mi caso, he optado por utilizar el software de virtualización **VirtualBox**.
 
 En un principio, mi intención era configurar las IP como estáticas y tras una serie de problemas, decidí configurar la Red de las máquinas como **adaptador puente**.
@@ -24,3 +24,14 @@ Y posteriormente si está en ejecución en ambas máquinas:
 
 Para instalar curl he ejecutado
 `sudo apt-get install curl`
+
+Para comprobar que apache está funcionando, he creado un archivo en ambas máquinas, `hola.html` en el directorio `/var/www/html/`.
+Ahora, debemos acceder usando **curl** de una máquina a la otra y viceversa.
+
+
+Para finalizar, también podemos probar a acceder de una máuina a otra por **ssh**
+
+
+O incluso utilizar curl para descargar un archivo:
+
+
