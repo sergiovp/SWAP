@@ -22,6 +22,7 @@ A continuación, he comprobado la versión del servidor:
 ###### *Figura 1.1.* Versión del servidor.
 
 Y posteriormente si está en ejecución en ambas máquinas:
+
 ![ejecucion_apache_m1](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%201/apache_ejecucion_m1.png)
 ###### *Figura 1.2.* Funcionamiento de apache en **MV1**.
 
@@ -33,11 +34,13 @@ Para instalar curl he ejecutado
 
 Para comprobar que apache está funcionando, he creado un archivo en ambas máquinas, `hola.html` en el directorio `/var/www/html/`.
 Ahora, debemos acceder usando **curl** de una máquina a la otra y viceversa. También podemos probar a conectarnos de una a otra por **ssh**:
+
 ![curl_ssh](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%201/curl_y_ssh.png)
 ###### *Figura 1.4.* Aceso de una máquina a otra usando **curl** y **ssh**.
 
 
 O incluso utilizar curl para descargar un archivo:
+
 ![curl_descarga](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%201/curl_imagen.png)
 ###### *Figura 1.5.* Descarga de archivo mediante **curl**.
 
