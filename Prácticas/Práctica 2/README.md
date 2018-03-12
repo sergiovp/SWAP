@@ -54,5 +54,5 @@ Para ello, hay que seguir dos pasos:
 
 A continuación, podemos acceder a la **MV1** sin contraseña.
 
-![ssh]()
+![ssh](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%202/acceso_ssh_sin_contrase%C3%B1a.png)
 ###### Figura 2.4. Acceso mediante ssh sin contraseña.
