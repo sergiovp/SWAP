@@ -12,8 +12,11 @@ Esta segunda práctica consiste en:
 En esta primera parte, como aproximación a la idea de tener contenido replicado en ambas máquinas, podemos usar el siguiente comando. `tar czf - directorio | ssh equipodestino 'cat > ~/tar.tgz'`
 Con el cual estaremos creando un **tar.gz** en la **MV2** a través de la **MV1** como podemos ver a continuación.
 
-![]()
-######
+![tar](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%202/tar.png)
+###### Ejecución del comando en **MV1**.
+
+![tar2](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%202/tar2.png)
+###### Creación del tar en **MV2**.
 
 El problema que esto conlleva, es la necesidad de estar una persona ejecutando dicho comando cada vez que se quiera hacer una copia de seguridad, dicho proceso, a continuación, veremos cómo automatizarlo con la herramienta rsync, la cual he instalado con `sudo apt-get install rsync`. Aunque en mi caso, ya la tenía instalada.
 
