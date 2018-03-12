@@ -2,10 +2,10 @@
 ## Práctica 2. Clonar la información de un sitio web.
 ### Sergio Vela Pelegrina.
 Esta segunda práctica consiste en:
--1.Aprender a copiar archivos mediante shh. 
--2.Clonar contenidos entre máquinas.
--3.Configurar el ssh para acceder a máquinas remotas sin contraseña. 
--4.Establecer tareas en cron.
++1.Aprender a copiar archivos mediante shh. 
++2.Clonar contenidos entre máquinas.
++3.Configurar el ssh para acceder a máquinas remotas sin contraseña. 
++4.Establecer tareas en cron.
 
 ## 1. Copiar archivos mediante ssh.
 
