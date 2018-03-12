@@ -42,3 +42,17 @@ Donde:
 + --exclude indica que ciertos directorios o ficheros no deben copiarse.
 
 ## 3. Acceso sin contraseña para ssh.
+
+Como hemos comentado previamente, la intención de la práctica es poder mantener el contenido de varias máquinas actualizado e idéntico entre ellas. 
+Podríamos hacer uso de algún script que automatizara el proceso, pero no tendría mucho sentido querer automatizar el proceso y a la vez tener que estar pendientes de cuando se nos pida la contraseña. Por ello, configuraremos **ssh** para acceder sin que se solicite contraseña.
+
+Para ello, hay que seguir dos pasos:
+
++ En la **MV2** debemos ejecutar el siguiente comando `ssh-keygen -b 4096 -t rsa` con el que podremos generar la clave.
+
++ Ejecutar, nuevamente en la **MV2** el comando `ssh-copy-id vela1@172.20.10.4` para hacer la copia de la clave.
+
+A continuación, podemos acceder a la **MV1** sin contraseña.
+
+![ssh]()
+###### Figura 2.4. Acceso mediante ssh sin contraseña.
