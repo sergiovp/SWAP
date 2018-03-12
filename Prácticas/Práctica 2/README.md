@@ -22,14 +22,23 @@ El problema que esto conlleva, es la necesidad de estar una persona ejecutando d
 
 ## 2. Clonar contenidos entre máquinas.
 
-Acto seguido, debemos probar el funcionamiento de rsync. Para ello, situados en la MV2, vamos a clonar la carpeta con el contenido del servidor web principal, ejecutando la siguiente orden:
+Acto seguido, debemos probar el funcionamiento de rsync. Para ello, situados en la **MV2**, vamos a clonar la carpeta con el contenido del servidor web principal de la **MV1**, ejecutando la siguiente orden:
 `rsync -avz -e ssh vela1@172.20.10.4:/var/www/ /var/www/`
 
-Como podemos apreciar en la imagen, en la MV2 (desde la que hemos ejecutado el comando) se nos ha clonado el contenido del servidor web principal. Estoy segudo de que se ha clonado correctamente al hacerle un cat al archivo hola.html y ver el mensaje "maquina 1 funcionando correctamente", que es el mensaje que tenia en la MV1.
+![rsync](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%202/rsync_clonar.png)
+###### Figura 2.3. Clonado de directorio con rsync.
+
+Como podemos apreciar en la imagen, en la **MV2** (desde la que hemos ejecutado el comando) se nos ha clonado el directorio. Estoy segudo de que se ha clonado correctamente al hacerle un cat al archivo hola.html y ver el mensaje "maquina 1 funcionando correctamente", que es el mensaje que tenia en la **MV1**.
 
 Como se nos especifica en el guión, rsync nos permite determinar que directorios copiar y cuáles ignorar en el proceso de copia.
-Para ello, debemos ejecutar ls siguiente orden
-`rsync -avz --delete --exclude=**/stats --exclude=**/error --exclude=**/files/pictures -e ssh vela1@172.20.10.4:/var/www/ /var/www/` 
+Para ello, debemos ejecutar la siguiente orden.
+`rsync -avz --delete --exclude=**/stats --exclude=**/error --exclude=**/files/pictures -e ssh vela1@172.20.10.4:/var/www/ /var/www/`
 
+![rsync](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%202/rsync_clonar_excluyendo.png)
+###### Figura 2.3. Clonado de directorio con rsync excluyendo.
 
+Donde:
++ --delete indica que aquellos ficheros que se hayan eliminado en la máquina origen, también se borren en la máquina destino.
++ --exclude indica que ciertos directorios o ficheros no deben copiarse.
 
+## 3. Acceso sin contraseña para ssh.
