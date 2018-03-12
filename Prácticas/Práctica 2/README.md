@@ -35,7 +35,7 @@ Para ello, debemos ejecutar la siguiente orden.
 `rsync -avz --delete --exclude=**/stats --exclude=**/error --exclude=**/files/pictures -e ssh vela1@172.20.10.4:/var/www/ /var/www/`
 
 ![rsync](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%202/rsync_clonar_excluyendo.png)
-###### Figura 2.3. Clonado de directorio con rsync excluyendo.
+###### Figura 2.4. Clonado de directorio con rsync excluyendo.
 
 Donde:
 + --delete indica que aquellos ficheros que se hayan eliminado en la máquina origen, también se borren en la máquina destino.
@@ -55,4 +55,18 @@ Para ello, hay que seguir dos pasos:
 A continuación, podemos acceder a la **MV1** sin contraseña.
 
 ![ssh](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%202/acceso_ssh_sin_contrase%C3%B1a.png)
-###### Figura 2.4. Acceso mediante ssh sin contraseña.
+###### Figura 2.5. Acceso mediante ssh sin contraseña.
+
+## 4. Programar tareas con crontab.
+
+Por último en este prática, crearemos una tarea con **cron**, el cual ejecuta procesos en el instante indicado en el fichero *crontab*.
+La tarea en **cron** se ejecutará cada hora para mantener actualizado el contenido del directorio `/var/www` entre las dos máquinas.
+
+Para ello, añadiremos la siguiente tarea en el fichero `/etc/crontab`
+`* */1 * * * rsync -avz -e ssh vela1@172.20.10.4:/var/www/ /var/www/`.
+
+Con la que cada hora se creará una copia de seguridad automática del directorio.
+
+
+
+
