@@ -59,10 +59,12 @@ A continuación, podemos acceder a la **MV1** sin contraseña.
 
 ## 4. Programar tareas con crontab.
 
-Por último en este prática, crearemos una tarea con **cron**, el cual ejecuta procesos en el instante indicado en el fichero *crontab*.
+Por último en esta prática, crearemos una tarea con **cron**, el cual ejecuta procesos en el instante indicado en el fichero *crontab*.
+
 La tarea en **cron** se ejecutará cada hora para mantener actualizado el contenido del directorio `/var/www` entre las dos máquinas.
 
 Para ello, añadiremos la siguiente tarea en el fichero `/etc/crontab`
+
 `* */1 * * * rsync -avz -e ssh vela1@172.20.10.4:/var/www/ /var/www/`.
 
 Con la que cada hora se creará una copia de seguridad automática del directorio.
