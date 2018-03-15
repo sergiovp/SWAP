@@ -2,10 +2,10 @@
 ## Práctica 2. Clonar la información de un sitio web.
 ### Sergio Vela Pelegrina.
 Esta segunda práctica consiste en:
-+ 1.Aprender a copiar archivos mediante shh. 
-+ 2.Clonar contenidos entre máquinas.
-+ 3.Configurar el ssh para acceder a máquinas remotas sin contraseña. 
-+ 4.Establecer tareas en cron.
++ Aprender a copiar archivos mediante shh. 
++ Clonar contenidos entre máquinas.
++ Configurar el ssh para acceder a máquinas remotas sin contraseña. 
++ Establecer tareas en cron.
 
 ## 1. Copiar archivos mediante ssh.
 
@@ -61,13 +61,13 @@ A continuación, podemos acceder a la **MV1** sin contraseña.
 
 Por último en esta prática, crearemos una tarea con **cron**, el cual ejecuta procesos en el instante indicado en el fichero *crontab*.
 
-La tarea en **cron** se ejecutará cada hora para mantener actualizado el contenido del directorio `/var/www` entre las dos máquinas.
+Haremos que la tarea en **cron** se ejecute siempre, para así tener actualizado el contenido del directorio `/var/www` en todo momento entre las dos máquinas.
 
 Para ello, añadiremos la siguiente tarea en el fichero `/etc/crontab`
 
-`* */1 * * * rsync -avz -e ssh vela1@172.20.10.4:/var/www/ /var/www/`.
+`* * * * * vela2 rsync -avz -e ssh vela1@172.20.10.4:/var/www/ /var/www/`
 
-Con la que cada hora se creará una copia de seguridad automática del directorio.
+Con la que se creará una copia de seguridad automática del directorio en la **MV2**.
 
 
 
