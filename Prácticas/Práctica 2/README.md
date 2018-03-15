@@ -61,7 +61,7 @@ A continuación, podemos acceder a la **MV1** sin contraseña.
 
 Por último en esta prática, crearemos una tarea con **cron**, el cual ejecuta procesos en el instante indicado en el fichero *crontab*.
 
-Haremos que la tarea en **cron** se ejecute siempre, para así tener actualizado el contenido del directorio `/var/www` en todo momento entre las dos máquinas.
+Haremos que la tarea en **cron** se ejecute en cada momento, para así tener actualizado el contenido del directorio `/var/www` en todo momento entre las dos máquinas.
 
 Para ello, añadiremos la siguiente tarea en el fichero `/etc/crontab`
 
