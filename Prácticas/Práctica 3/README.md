@@ -9,11 +9,11 @@ Existen dispositivos hardware específicos para realizar el balanceo de carga, p
 Para balancear la carga entre varios servidores, utilizaremos **DNS**.
 
 Podríamos dividir la práctica en tres tareas básicas:
-+ Configurar una máquina e instalarle nginx.
-+ Configurar una máquina e instalarle haproxy.
++ Configurar una máquina e instalarle **nginx**.
++ Configurar una máquina e instalarle **haproxy**.
 + Comparación de prestaciones entre ambos balanceadores.
 
-## 1. Configurar una máquina e instalarle nginx.
+## 1. Configurar una máquina e instalarle **nginx**.
 
 En esta primera parte de la práctica, debemos configurar una tercera máquina que se utilizará como balanceador de carga.
 Tras la instalación de **Ubuntu Server** en esta tercera máquina, procedemos a la instalación de nginx mediante el comando `sudo apt-get install nginx`.
@@ -25,3 +25,5 @@ Ya estaría funcionando correctamente, y por tanto, podemos hacer peticiones a l
 
 ![nginx](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%203/images/nginx_funcionando.png)
 ###### Figura 3.1. **nginx** funcionando.
+
+## 1. Configurar una máquina e instalarle **haproxy**.
