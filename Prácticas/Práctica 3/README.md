@@ -23,5 +23,5 @@ Para ello, he tenido que configurar el fichero `/etc/nginx/conf.d/default.conf` 
 
 Ya estaría funcionando correctamente, y por tanto, podemos hacer peticiones a la IP de la máquina balanceadora usando **curl** como veremos en la siguiente imagen:
 
-![nginx]()
+![nginx](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%203/images/nginx_funcionando.png)
 ###### Figura 3.1. **nginx** funcionando.
