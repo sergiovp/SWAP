@@ -26,4 +26,4 @@ Ya estaría funcionando correctamente, y por tanto, podemos hacer peticiones a l
 ![nginx](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%203/images/nginx_funcionando.png)
 ###### Figura 3.1. **nginx** funcionando.
 
-## 1. Configurar una máquina e instalarle **haproxy**.
+## 2. Configurar una máquina e instalarle **haproxy**.
