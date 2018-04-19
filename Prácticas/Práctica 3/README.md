@@ -40,3 +40,14 @@ De haberlo hecho bien, ya deberíamos tenerlo funcionando y podríamos hacerle p
 
 ![haproxy](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%203/images/haproxy_funcionando.png)
 ###### Figura 3.2. **haproxy** funcionando.
+
+## 3. Someter a una alta carga el servidor de balanceo y comparar prestaciones.
+
+Para medir el rendimiento de un servidor necesitaremos una herramienta que ejecutar en los clientes para crear una carga HTTP específica.
+
+Existen diversas herramientas para comprobar el rendimiento de servidores web, en nuestro caso usaremos **Apache Benchmark**.
+
+Es conveniente ejecutar los benchmark en otra máquina diferente a las que forman parte de la granja web.
+Para utilizar **Apache Benchmark**, ejecutaremos el siguiente comando `ab -n 1000 -c 10 http://172.20.10.X/hola.html`.
+Dónde los parámetros son los siguientes:
+Se solicita la página con dirección http://172.20.10.X/hola.html 1000 veces (-n 1000 indica el número de peticiones) y hacer esas peticiones concurrentemente de 10 en 10 (-c 10 indica el nivel de concurrencia).
