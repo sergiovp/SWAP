@@ -55,10 +55,12 @@ Se solicita la página con dirección http://172.20.10.X/hola.html 1000 veces (-
 Tras ejecutar dicho comando, obtenemos lo siguiente:
 
 + **nginx**
+
 ![n](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%203/images/nginx_pretaciones.png)
 ###### Figura 3.2. **nginx** prestaciones.
 
 + **haproxy**
+
 ![h](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%203/images/haproxy_prestaciones.png)
 ###### Figura 3.2. **haproxy** prestaciones.
 
