@@ -51,3 +51,21 @@ Es conveniente ejecutar los benchmark en otra máquina diferente a las que forma
 Para utilizar **Apache Benchmark**, ejecutaremos el siguiente comando `ab -n 1000 -c 10 http://172.20.10.X/hola.html`.
 Dónde los parámetros son los siguientes:
 Se solicita la página con dirección http://172.20.10.X/hola.html 1000 veces (-n 1000 indica el número de peticiones) y hacer esas peticiones concurrentemente de 10 en 10 (-c 10 indica el nivel de concurrencia).
+
+Tras ejecutar dicho comando, obtenemos lo siguiente:
+
++ **nginx**
+![n](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%203/images/nginx_pretaciones.png)
+###### Figura 3.2. **nginx** prestaciones.
+
++ **haproxy**
+![h](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%203/images/haproxy_prestaciones.png)
+###### Figura 3.2. **haproxy** prestaciones.
+
+En definitiva, tenemos lo siguiente:
+
+| nginx | haproxy |
+|:-----:|:-------:|
+|0,769s |  0,597s |
+
+Y por consecuencia, podemos decir que en este caso, **haproxy** tiene un mejor resultado.
