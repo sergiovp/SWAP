@@ -34,7 +34,7 @@ Tal y como se nos indica en el guión, comenzaremos con la instalación.
 Para instalar **haproxy** simplemente usaremos el comando `sudo apt-get install haproxy`.
 
 
-Una vez instalado, debemos modificar el archivo `/etc/haproxy/haproxy.cfg` ya que la configuración que nos trae por defecto no nos vale.
+Una vez instalado, debemos modificar el archivo `/etc/haproxy/haproxy.cfg` tal y como se nos explica en el guión, ya que la configuración que nos trae por defecto no nos vale.
 
 De haberlo hecho bien, ya deberíamos tenerlo funcionando y podríamos hacerle peticiones como veremos a continuación:
 
