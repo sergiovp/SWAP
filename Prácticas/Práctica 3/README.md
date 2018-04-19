@@ -27,3 +27,11 @@ Ya estaría funcionando correctamente, y por tanto, podemos hacer peticiones a l
 ###### Figura 3.1. **nginx** funcionando.
 
 ## 2. Configurar una máquina e instalarle **haproxy**.
+
+En este caso, haremos el mismo procedimiento que la parte anterior, pero en lugar de **nginx** para el balanceo, utilizaremos **haproxy**.
+Tal y como se nos indica en el guión, comenzaremos con la instalación.
+Para instalar **haproxy** simplemente usaremos el comando `sudo apt-get install haproxy`.
+Una vez instalado, debemos modificar el archivo `/etc/haproxy/haproxy.cfg` ya que la configuración que nos trae por defecto no nos vale.
+
+De haberlo hecho bien, ya deberíamos tenerlo funcionando y podríamos hacerle peticiones como veremos a continuación: 
+![haproxy]()
