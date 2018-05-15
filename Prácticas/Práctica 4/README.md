@@ -70,7 +70,6 @@ criterios de seguridad establecidos. Estos criterios se configuran mediante un c
 
 iptables es una herramienta de cortafuegos, de espacio de usuario, con la que el superusuario define reglas de filtrado de paquetes, de traducción de direcciones de red, y mantiene registros de log. Para más información sobre la herramienta:
 ~~~
-
 man iptables
 iptables –h
 ~~~
