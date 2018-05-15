@@ -75,7 +75,9 @@ iptables –h
 ~~~
 
 Para comprobar el estado del cortafuegos, debemos ejecutar:
+
 `iptables –L –n -v`
+
 Para lanzar, reiniciar o parar el cortafuegos, y para salvar las reglas establecidas hasta
 ese momento, ejecutaremos respectivamente:
 
