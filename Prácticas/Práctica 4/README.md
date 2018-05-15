@@ -42,18 +42,18 @@ service apache2 reload
 `
 
 Ya podemos hacer peticiones **HTTPS** mediante **curl** ejecutando `curl –k https://172.20.10.X/hola.html` 
-![peticiones]()
+![peticiones](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%204/images/https_VM1.png)
 ###### Figura 4.1. Peticiones HTTPS MV1.
 
-![peticiones]()
+![peticiones](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%204/images/https_VM2.png)
 ###### Figura 4.2. Peticiones HTTPS MV2.
 
 Tal y como nos aparece en el guión y a modo de curiosidad, si accedemos al servidor con el navegador, en la barra de dirección aparece en rojo el **HTTPS**, ya que se trata de un certificado autofirmado cuya autoridad no reconoce.
-![peticiones]()
+![peticiones](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%204/images/https_rojo.png)
 ###### Figura 4.3. HTTPS en rojo.
 
 Tras tener lo anterior, podemos configurar **nginx** en el servidor de balanceo de carga, con el fin de que pueda balancear tráfico **HTTPS**.
-![peticiones]()
+![peticiones](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%204/images/balanceo_https.png)
 ###### Figura 4.4. Balanceo de tráfico HTTPS.
 
 
@@ -132,11 +132,11 @@ Para saber si está abierto o cerrado el puerto 80 ejecutamos:
 `netstat -tulpn | grep :80`
 
 Lo habitual es crear un script que se ejecute en el arranque del sistema. Veamos a continuación un ejemplo de script para la configuración básica de la **MV1**.
-![peticiones]()
+![peticiones](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%204/images/script.png)
 ###### Figura 4.5. Script.
 
 Y su ejecución muestra lo siguiente:
-![peticiones]()
+![peticiones](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%204/images/ejecucion.png)
 ###### Figura 4.6. Ejecución del script.
 
 
