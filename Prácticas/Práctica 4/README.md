@@ -69,10 +69,12 @@ criterios de seguridad establecidos. Estos criterios se configuran mediante un c
 #### Configuración del cortafuegos iptables en Linux.
 
 iptables es una herramienta de cortafuegos, de espacio de usuario, con la que el superusuario define reglas de filtrado de paquetes, de traducción de direcciones de red, y mantiene registros de log. Para más información sobre la herramienta:
-`
+~~~
+
 man iptables
 iptables –h
-`
+~~~
+
 Para comprobar el estado del cortafuegos, debemos ejecutar:
 `iptables –L –n -v`
 Para lanzar, reiniciar o parar el cortafuegos, y para salvar las reglas establecidas hasta
