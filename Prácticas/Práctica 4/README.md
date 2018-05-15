@@ -78,21 +78,12 @@ Para comprobar el estado del cortafuegos, debemos ejecutar:
 Para lanzar, reiniciar o parar el cortafuegos, y para salvar las reglas establecidas hasta
 ese momento, ejecutaremos respectivamente:
 
-`
+~~~
 service iptables start
-`
-
-`
 service iptables restart
-`
-
-`
 service iptables stop
-`
-
-`
 service iptables save
-`
+~~~
 
 Bloquear todo el tráfico ICMP (ping), para evitar ataques como el del ping de la muerte:
 `iptables -A INPUT -p icmp --icmp-type echo-request -j DROP`
