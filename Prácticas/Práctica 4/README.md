@@ -42,6 +42,7 @@ service apache2 reload
 `
 
 Ya podemos hacer peticiones **HTTPS** mediante **curl** ejecutando `curl –k https://172.20.10.X/hola.html` 
+
 ![peticiones](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%204/images/https_VM1.png)
 ###### Figura 4.1. Peticiones HTTPS MV1.
 
@@ -49,10 +50,12 @@ Ya podemos hacer peticiones **HTTPS** mediante **curl** ejecutando `curl –k ht
 ###### Figura 4.2. Peticiones HTTPS MV2.
 
 Tal y como nos aparece en el guión y a modo de curiosidad, si accedemos al servidor con el navegador, en la barra de dirección aparece en rojo el **HTTPS**, ya que se trata de un certificado autofirmado cuya autoridad no reconoce.
+
 ![peticiones](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%204/images/https_rojo.png)
-###### Figura 4.3. HTTPS en rojo.
+###### Figura 4.3. No es seguro.
 
 Tras tener lo anterior, podemos configurar **nginx** en el servidor de balanceo de carga, con el fin de que pueda balancear tráfico **HTTPS**.
+
 ![peticiones](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%204/images/balanceo_https.png)
 ###### Figura 4.4. Balanceo de tráfico HTTPS.
 
@@ -74,10 +77,17 @@ Para comprobar el estado del cortafuegos, debemos ejecutar:
 `iptables –L –n -v`
 Para lanzar, reiniciar o parar el cortafuegos, y para salvar las reglas establecidas hasta
 ese momento, ejecutaremos respectivamente:
+
 `
 service iptables start
+`
+`
 service iptables restart
+`
+`
 service iptables stop
+`
+`
 service iptables save
 `
 
