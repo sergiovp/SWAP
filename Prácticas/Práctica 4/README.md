@@ -81,12 +81,15 @@ ese momento, ejecutaremos respectivamente:
 `
 service iptables start
 `
+
 `
 service iptables restart
 `
+
 `
 service iptables stop
 `
+
 `
 service iptables save
 `
