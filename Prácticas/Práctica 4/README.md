@@ -89,6 +89,7 @@ service iptables save
 ~~~
 
 Bloquear todo el tráfico ICMP (ping), para evitar ataques como el del ping de la muerte:
+
 `iptables -A INPUT -p icmp --icmp-type echo-request -j DROP`
 
 Abrir el puerto 22 para permitir el acceso por SSH:
