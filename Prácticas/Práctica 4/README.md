@@ -74,13 +74,11 @@ man iptables
 iptables –h
 ~~~
 
-Para comprobar el estado del cortafuegos, debemos ejecutar:
++ Para comprobar el estado del cortafuegos, debemos ejecutar:
 
 `iptables –L –n -v`
 
-Para lanzar, reiniciar o parar el cortafuegos, y para salvar las reglas establecidas hasta
-ese momento, ejecutaremos respectivamente:
-
++ Para lanzar, reiniciar o parar el cortafuegos, y para salvar las reglas establecidas hasta ese momento, ejecutaremos respectivamente:
 ~~~
 service iptables start
 service iptables restart
@@ -88,41 +86,41 @@ service iptables stop
 service iptables save
 ~~~
 
-Bloquear todo el tráfico ICMP (ping), para evitar ataques como el del ping de la muerte:
++ Bloquear todo el tráfico ICMP (ping), para evitar ataques como el del ping de la muerte:
 
 `iptables -A INPUT -p icmp --icmp-type echo-request -j DROP`
 
-Abrir el puerto 22 para permitir el acceso por SSH:
++ Abrir el puerto 22 para permitir el acceso por SSH:
 ~~~
 iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 iptables -A OUTPUT -p udp --sport 22 -j ACCEPT
 ~~~
 
-Abrir los puertos HTTP/HTTPS (80 y 443) para configurar un servidor web:
++ Abrir los puertos HTTP/HTTPS (80 y 443) para configurar un servidor web:
 ~~~
 iptables -A INPUT -m state --state NEW -p tcp --dport 80 -j ACCEPT
 iptables -A INPUT -m state --state NEW -p tcp --dport 443 -j ACCEPT
 ~~~
 
-Abrir el puerto 53 para permitir el acceso a DNS:
++ Abrir el puerto 53 para permitir el acceso a DNS:
 ~~~
 iptables -A INPUT -m state --state NEW -p udp --dport 53 -j ACCEPT
 iptables -A INPUT -m state --state NEW -p tcp --dport 53 -j ACCEPT
 ~~~
 
-Bloquear todo el tráfico de entrada desde una IP:
++ Bloquear todo el tráfico de entrada desde una IP:
 
 `iptables -I INPUT -s 150.214.13.13 -j DROP`
 
-Bloquear todo el tráfico de salida hacia una IP:
++ Bloquear todo el tráfico de salida hacia una IP:
 
 `iptables -I OUTPUT -s 31.13.83.8 -j DROP`
 
-Evitar el acceso a www.facebook.com especificando el nombre de dominio:
++ Evitar el acceso a www.facebook.com especificando el nombre de dominio:
 
 `iptables -A OUTPUT -p tcp -d www.facebook.com -j DROP`
 
-Para volver a la configuración de la máquina inicial y permitir todo el tráfico
++ Para volver a la configuración de la máquina inicial y permitir todo el tráfico
 ~~~
 **Eliminar todas las reglas (configuración limpia)**
 iptables -F
@@ -136,11 +134,11 @@ iptables −P FORWARD ACCEPT
 iptables -L -n -v
 ~~~
 
-Cuando terminemos nuestra configuración, podemos comprobar los puertos que hay abiertos:
++ Cuando terminemos nuestra configuración, podemos comprobar los puertos que hay abiertos:
 
 `netstat -tulpn`
 
-Para saber si está abierto o cerrado el puerto 80 ejecutamos:
++ Para saber si está abierto o cerrado el puerto 80 ejecutamos:
 
 `netstat -tulpn | grep :80`
 
