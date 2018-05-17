@@ -149,7 +149,7 @@ Lo habitual es crear un script que se ejecute en el arranque del sistema. Veamos
 
 Y su ejecución muestra lo siguiente:
 
-![peticiones](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%204/images/ejecucion.png)
+![peticiones](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%204/images/script_iptables.png)
 ###### Figura 4.6. Ejecución del script.
 
 
