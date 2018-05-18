@@ -15,4 +15,3 @@ Diapo 39.
     + productos comerciales para servidores de almacenamiento.
 Diapo 48.
 
-## 5. 
