@@ -10,9 +10,9 @@ Diapo 29.
 Diapo 39.
 
 ## 4. Buscar información sobre:
-+ Ejemplos de balanceadores software y hardware (productos comerciales).
-+ Productos comerciales para servidores de aplicaciones.
-+ Productos comerciales para servidores de almacenamiento.
++ **4.1.** Ejemplos de balanceadores software y hardware (productos comerciales).
++ **4.2.** Productos comerciales para servidores de aplicaciones.
++ **4.3.** Productos comerciales para servidores de almacenamiento.
 
 #### 4.1. Ejemplos de balanceadores software y hardware (productos comerciales):
 
