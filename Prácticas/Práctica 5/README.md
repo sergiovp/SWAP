@@ -85,7 +85,7 @@ Volvemos a la máquina esclava, entramos en mysql y le damos los datos del maest
 ~~~
 mysql> CHANGE MASTER TO MASTER_HOST='172.20.10.4',
 MASTER_USER='esclavo', MASTER_PASSWORD='esclavo',
-MASTER_LOG_FILE='mysql-bin.000006', MASTER_LOG_POS=1133,
+MASTER_LOG_FILE='bin.000006', MASTER_LOG_POS=1133,
 MASTER_PORT=3306;
 ~~~
 
