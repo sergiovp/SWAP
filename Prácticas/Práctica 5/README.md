@@ -11,12 +11,12 @@ Los objetivos concretos de esta práctica son:
 
 Debemos crearnos una BD en MySQL e insertar algunos datos. Así tendremos datos con los cuales hacer las copias de seguridad. En todo momento usaremos la interfaz de línea de comandos del MySQL:
 
-![BD]()
+![BD](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%205/images/1_BD_creada.png)
 ###### Figura 5.1. BD creada.
 
 Ya tenemos datos (un registro) insertados en nuestra BD llamada “datos”. Podemos haber insertado más registros. Veamos cómo entrar y hacer una consulta:
 
-![BD]()
+![BD](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%205/images/2_consulta_BD.png)
 ###### Figura 5.2. Consulta en la BD.
 
 ## 2. Replicar una BD MySQL con mysqldump.
@@ -26,7 +26,7 @@ La sintaxis de uso es: `mysqldump ejemplodb -u root -p > /root/ejemplodb.sql`
 Esto puede ser suficiente, pero tenemos que tener en cuenta que los datos pueden estar actualizándose constantemente en el servidor de BD principal. En este caso, antes de hacer la copia de seguridad en el archivo .SQL debemos evitar que se acceda a la BD para cambiar nada.
 Así, en el servidor de BD principal (maquina1) hacemos:
 
-![BD]()
+![BD](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%205/images/3_evitar_acceso_bd.png)
 ###### Figura 5.3. Evitar que se acceda a la BD.
 
 Ahora ya sí podemos hacer el mysqldump para guardar los datos. En el servidor principal (maquina1) hacemos:
@@ -41,13 +41,13 @@ Ya podemos ir a la máquina esclavo (maquina2, secundaria) para copiar el archiv
 `scp maquina1:/tmp/ejemplodb.sql /tmp/`
 y habremos copiado desde la máquina principal (1) a la máquina secundaria (2) los datos que hay almacenados en la BD.
 
-![BD]()
+![BD](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%205/images/4_copia_BD.png)
 ###### Figura 5.4. Copia de la BD a MV2.
 
 Debemos crear la **BD** en la **MV2** y restaurar los datos contenidos con `mysql -u root -p ejemplodb < /tmp/ejemplodb.sql`.
 Y como podemos comprobar, se ha importado correctamente:
 
-![BD]()
+![BD](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%205/images/5_consulta_BD_2.png)
 ###### Figura 5.5. Consulta de la BD en la MV2.
 
 ## 3. Replicación de BD mediante una configuración maestro-esclavo.
@@ -78,7 +78,7 @@ mysql> FLUSH TABLES WITH READ LOCK;
 Para finalizar con la configuración en el maestro, obtenemos los datos de la BD que vamos a replicar para posteriormente usarlos en la configuración del esclavo:
 `mysql> SHOW MASTER STATUS;`
 
-![BD]()
+![BD](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%205/images/6_configuracion_maestro.png)
 ###### Figura 5.6. Configuración maestro.
 
 Volvemos a la máquina esclava, entramos en mysql y le damos los datos del maestro.
@@ -94,10 +94,10 @@ Y por último, arrancamos el esclavo y ya está todo listo.
 
 Para comprobar que todo funciona, añadiremos datos en la **BD** de la **MV1** y veremos como se actualiza en la **BD** de la **MV2**.
 
-![BD]()
+![BD](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%205/images/7_insercion_MV1.png)
 ###### Figura 5.7. Insertamos un dato en la BD de la MV1.
 
-![BD]()
+![BD](https://github.com/sergiovp/SWAP/blob/master/Pr%C3%A1cticas/Pr%C3%A1ctica%205/images/8_clonado_MV2.png)
 ###### Figura 5.8. Comprobamos si se ha insertado en la BD de la MV2.
 
 Como podemos ver, se ha realizado el clonado perfectamente.
