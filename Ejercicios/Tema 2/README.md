@@ -34,15 +34,7 @@ Es un FrameWork de código abierto para desarrollar aplicaciones web, utilizando
 + También tenemos otra herramienta, **Gnome System Monitor**, que muestra qué programas están en ejecución y cuánto procesador, tiempo, memoria y espacio en disco están usando.
 
 ## 2.4. Buscar información sobre:
-+ **2.4.1.** Ejemplos de balanceadores software y hardware (productos comerciales).
     
-
-+ **2.4.2.** Productos comerciales para servidores de aplicaciones.
-    
-
-+ **2.4.3.** Productos comerciales para servidores de almacenamiento.
-    
-
 #### 2.4.1. Ejemplos de balanceadores software y hardware (productos comerciales):
 + Software:
         + HAProxy, Pound, Nginx
