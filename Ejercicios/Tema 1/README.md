@@ -10,16 +10,13 @@
 ### apache
 
 **Apache** es utilizado principalmente, para realizar servicio a páginas web, ya sean estáticas o dinámicas. Este estupendo servidor se integra a la perfección con otras aplicaciones, creando el famoso paquete LAMP con Linux, MySQL y PHP.
-
 Es el servidor web más utilizado en todo el mundo y lleva siéndolo desde el año 1996.
-
 Una de las características que definen a Apache es que la gran mayoría de fallos de seguridad descubiertos, únicamente pueden aprovecharlos usuarios locales.
 
 ### nginx
 
 **nginx**, al igual que apache, se suele utilizar como sevidor web.
 Otro de los usos que se le puede dar es como *balanceador de carga*.
-
 Con nginx se usan los sitios con los usos más intensivos de recursos que existen, incluyendo Netflix, NASA, e incluso WordPress.com.
 
 ### thttpd
