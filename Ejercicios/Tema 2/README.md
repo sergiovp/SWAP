@@ -37,13 +37,13 @@ Es un FrameWork de código abierto para desarrollar aplicaciones web, utilizando
     
 #### 2.4.1. Ejemplos de balanceadores software y hardware (productos comerciales):
 + Software:
-        + HAProxy, Pound, Nginx
-    + Hardware:
-        + Cisco, LoadMaster
+    + HAProxy, Pound, Nginx
++ Hardware:
+    + Cisco, LoadMaster
 
 #### 2.4.2. Productos comerciales para servidores de aplicaciones:
 + WebSphere, Internet Information Server
 
 #### 2.4.3. Productos comerciales para servidores de almacenamiento:
 + De la compañía **DELL** podemos encontrar lo siguiente:
-        + PowerVault MD1200, PowerVault MD1220, PowerVault MD3060e denso, Chasis denso Dell Storage MD1280, entre otros.
+    + PowerVault MD1200, PowerVault MD1220, PowerVault MD3060e denso, Chasis denso Dell Storage MD1280, entre otros.
