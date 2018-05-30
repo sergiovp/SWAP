@@ -2,7 +2,7 @@
 
 ## 6.2. Comprobar qué puertos tienen abiertos nuestras máquinas, su estado, y qué programa o demonio lo ocupa.
 Para ello, usaré el comando `netstat -tulpn`
-[imagen]()
+![imagen](https://github.com/sergiovp/SWAP/blob/master/Ejercicios/Tema%206/ejercicio_6.2.png)
 
 ## 6.3. Buscar información acerca de los tipos de ataques más comunes en servidores web (p.ej. secuestros de sesión). Detallar en qué consisten, y cómo se pueden evitar.
 + **Ataque Por Injection**. Los ataques de inyección, más específicamente sqli (Structured Query Language Injection) es una técnica para modificar una cadena de consulta de base de datos mediante la inyección de código en la consulta. El SQLI explota una posible vulnerabilidad donde las consultas se pueden ejecutar con los datos validados.
